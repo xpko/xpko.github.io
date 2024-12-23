@@ -44,6 +44,12 @@
       data-lang="zh-CN"
       crossorigin="anonymous"
       async>
+          function isEmpty(str) {
+              return (!str || str.trim() === "");
+          }
+          if (isEmpty(document.documentElement.lang) || document.documentElement.lang.startsWith("en")) {
+              document.currentScript.setAttribute("data-lang", "");
+          }
       (function(){function h(a){return'[giscus] An error occurred. Error message: "'.concat(a,'".')}function l(a,g){void 0===g&&(g=!1);g=g?"meta[property='og:".concat(a,"'],"):"";return(a=document.querySelector(g+"meta[name='".concat(a,"']")))?a.content:""}function p(){delete c.session;var a="".concat(k,"/widget?").concat(new URLSearchParams(c));e.src=a}var m=document.currentScript,k="https://giscus.app",b=new URL(location.href),d=b.searchParams.get("giscus")||"",n=localStorage.getItem("giscus-session");
 b.searchParams.delete("giscus");b.hash="";var f=b.toString();if(d)localStorage.setItem("giscus-session",JSON.stringify(d)),history.replaceState(void 0,document.title,f);else if(n)try{d=JSON.parse(n)}catch(a){localStorage.removeItem("giscus-session"),console.warn("".concat(h(null===a||void 0===a?void 0:a.message)," Session has been cleared."))}b=m.dataset;var c={};c.origin=f;c.session=d;c.theme=b.theme;c.reactionsEnabled=b.reactionsEnabled||"1";c.emitMetadata=b.emitMetadata||"0";c.inputPosition=b.inputPosition||
 "bottom";c.repo=b.repo;c.repoId=b.repoId;c.category=b.category||"";c.categoryId=b.categoryId;c.strict=b.strict||"0";c.description="";c.backLink=`[web link](${l("giscus:backlink")||f})`;switch(b.mapping){case "url":c.term=f;break;case "title":c.term=document.title;break;case "og:title":c.term=l("title",!0);break;case "specific":c.term=b.term;break;case "number":c.number=b.term;break;default:c.term=2>location.pathname.length?"index":decodeURIComponent(location.pathname.substring(1).replace(/\.\w+$/,""))}var q=(d=document.querySelector(".giscus"))&&
