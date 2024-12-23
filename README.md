@@ -1,4 +1,5 @@
-[![Static Badge](https://img.shields.io/badge/Github-shlu-green?style=social)](https://github.com/xpko) 
+[![Static Badge](https://img.shields.io/badge/Github-shlu-green?style=social&logo=github)
+](https://github.com/xpko) 
 <!-- DIRECTORY INDEX START -->
 
 - 📁 010editor/
