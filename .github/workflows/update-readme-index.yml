@@ -5,7 +5,12 @@ on:
     branches:
       - main  # 根据你的默认分支名称调整
       - master
-
+  # workflow_run:
+  #   workflows: ["pages-build-deployment"]
+  #   types:
+  #     - completed      
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
