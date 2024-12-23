@@ -33,7 +33,7 @@ commonmark:
 #markdown: redcarpet
 #redcarpet:
 #  extensions: ["autolink", "no_intra_emphasis", "tables", "strikethrough"]
-
+lang: zh-CN
 permalink: pretty
 readme_index:
   enabled:          true
