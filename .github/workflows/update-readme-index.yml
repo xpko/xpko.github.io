@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # 根据你的默认分支名称调整
+      - masker
 
 jobs:
   update-readme:
