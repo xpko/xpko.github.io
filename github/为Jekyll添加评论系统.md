@@ -18,9 +18,15 @@ e.classList.remove("giscus-frame--loading")});b=document.getElementById("giscus-
 console.error("".concat(h(a)," No session is stored initially. ").concat("Please consider reporting this error at https://github.com/giscus/giscus/issues/new.")):a.includes("Discussion not found")?console.warn("[giscus] ".concat(a,". A new discussion will be created if a comment/reaction is submitted.")):a.includes("API rate limit exceeded")?console.warn(h(a)):console.error("".concat(h(a)," ").concat("Please consider reporting this error at https://github.com/giscus/giscus/issues/new.")))))})})();
 ```
 
-补丁位置：支持url解码，否则评论里标题不显示中文
+补丁：支持url解码，否则评论里标题不显示中文
 
 ![image-20241223151219375](./为Jekyll添加评论系统/image-20241223151219375.png)
 
 ![image-20241223151447138](./为Jekyll添加评论系统/image-20241223151447138.png)
+
+补丁：去掉描述，优化web 链接显示
+
+![image-20241223152556536](./为Jekyll添加评论系统/image-20241223152556536.png)
+
+![image-20241223152611939](./为Jekyll添加评论系统/image-20241223152611939.png)
 
