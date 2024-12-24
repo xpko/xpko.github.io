@@ -115,7 +115,6 @@
   - 📁 ida7.5/
     - 📁 [keygen/](./IDA/ida7.5/keygen/)
   - 📁 [ida9.0/](./IDA/ida9.0/)
-  - 📁 [images/](./IDA/images/)
   - 📁 [plugins/](./IDA/plugins/)
     - 📁 [IDAPython/](./IDA/plugins/IDAPython/)
     - 📁 [keypatch/](./IDA/plugins/keypatch/)
@@ -314,6 +313,7 @@
 - 📁 [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - 📁 [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
