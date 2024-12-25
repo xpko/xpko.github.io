@@ -6,7 +6,7 @@
 # 调用约定
 - _cdecl
 # IDA 把一个立即数拆分成两个数相加的依据是什么？
-![image](./images/sp++.png)
+![image](./images/sp_plus_plus.png)
 > 比如上图，0x30拆分成0x40+var_10 (这里var_10=-0x10)
 
 # IDA 搜索数字  
