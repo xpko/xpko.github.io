@@ -98,7 +98,7 @@ In a few articles on the [Mars wiki](https://github.com/Tencent/mars/wiki), Tenc
 
 According to its developers, Mars and its STN module are comparable to networking libraries such as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [OkHttp](https://square.github.io/okhttp/), which are widely used in other mobile apps.
 
-[One of the technical articles](https://github.com/WeMobileDev/article/blob/master/微信终端跨平台组件 Mars 系列 - 我们如约而至.md?plain=1) released by the WeChat development team wrote about the process of open-sourcing Mars. According to the article, they had to separate WeChat-specific code, which was kept private, from the general use code, which was open sourced. In the end, three parts were separated from each other:
+[One of the technical articles](https://github.com/WeMobileDev/article/blob/master/%E5%BE%AE%E4%BF%A1%E7%BB%88%E7%AB%AF%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%BB%84%E4%BB%B6%20Mars%20%E7%B3%BB%E5%88%97%20-%20%E6%88%91%E4%BB%AC%E5%A6%82%E7%BA%A6%E8%80%8C%E8%87%B3.md?plain=1) released by the WeChat development team wrote about the process of open-sourcing Mars. According to the article, they had to separate WeChat-specific code, which was kept private, from the general use code, which was open sourced. In the end, three parts were separated from each other:
 
 - mars-open: to be open sourced, independent repository.
 - mars-private: potentially open sourced, depends on mars-open.
@@ -201,10 +201,10 @@ Records can be identified by different *record headers*, a fixed 3-byte sequence
 
 *Handshake* records contain metadata and the key establishment material needed for the other party to derive the same shared session key using Diffie-Hellman. *Handshake-Resumption* record contains sufficient metadata for “resuming” a previously established session, by re-using previously established key material. *Data* records can contain encrypted ciphertext that carries meaningful WeChat request data. Some *Data* packets simply contain an encrypted no-op heartbeat. *Alert* records signify errors or signify that one party intends to end a connection. In MMTLS, all non-handshake records are encrypted, but the key material used differs based on which stage of the handshake has been completed.
 
-Here is an annotated MMTLS packet from the server containing a *Handshake* record:
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 1](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/handshake-record.png)
-Here is an example of a **Data** record sent from the client to the server:
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 2](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/data-record.png)
+Here is an annotated MMTLS packet from the server containing a *Handshake* record:  
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 1](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/handshake-record.png)  
+Here is an example of a **Data** record sent from the client to the server:  
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 2](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/data-record.png)  
 
 To give an example of how these records interact, generally the client and server will exchange *Handshake* records until the Diffie-Hellman handshake is complete and they have established shared key material. Afterwards, they will exchange *Data* records, encrypted using the shared key material. When either side wants to close the connection, they will send an *Alert* record. More illustrations of each record type’s usage will be made in the following section.
 
