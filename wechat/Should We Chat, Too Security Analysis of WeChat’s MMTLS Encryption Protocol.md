@@ -409,7 +409,7 @@ This request then contains another encrypted ciphertext, which is encrypted by w
 
 [WeChat Crypto diagrams (inner layer)](https://docs.google.com/drawings/d/1Z-L5nUEKlz08G1W4Dt_7DdfF4g4djrgWttK-SkzfLlU/edit)
 
-![WeChat Crypto diagrams (inner layer)](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/WeChat Crypto diagrams (inner layer).png)
+![WeChat Crypto diagrams (inner layer)](./Should%20We%20Chat,%20Too%20Security%20Analysis%20of%20WeChat%E2%80%99s%20MMTLS%20Encryption%20Protocol/WeChat%20Crypto%20diagrams%20(inner%20layer).png)
 
 This section describes how the Business-layer requests described in **Section 3** are encrypted and decrypted, and how the keys are derived. We note that the set of keys and encryption processes introduced in this section are completely separate from those referred to in the MMTLS Encryption section. Generally, for Business-layer Encryption, much of the protocol logic is handled in the Java code, and the Java code calls out to the C++ libraries for encryption and decryption calculations. Whereas for MMTLS Encryption everything is handled in C++ libraries, and occurs on a different process entirely. There is very little interplay between these two layers of encryption.
 
