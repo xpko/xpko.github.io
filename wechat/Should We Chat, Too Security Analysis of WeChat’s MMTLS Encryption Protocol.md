@@ -202,9 +202,9 @@ Records can be identified by different *record headers*, a fixed 3-byte sequence
 *Handshake* records contain metadata and the key establishment material needed for the other party to derive the same shared session key using Diffie-Hellman. *Handshake-Resumption* record contains sufficient metadata for “resuming” a previously established session, by re-using previously established key material. *Data* records can contain encrypted ciphertext that carries meaningful WeChat request data. Some *Data* packets simply contain an encrypted no-op heartbeat. *Alert* records signify errors or signify that one party intends to end a connection. In MMTLS, all non-handshake records are encrypted, but the key material used differs based on which stage of the handshake has been completed.
 
 Here is an annotated MMTLS packet from the server containing a *Handshake* record:  
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 1](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/handshake-record.png)  
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 1](./images/handshake-record.png)  
 Here is an example of a **Data** record sent from the client to the server:  
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 2](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/data-record.png)  
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 2](./images/data-record.png)  
 
 To give an example of how these records interact, generally the client and server will exchange *Handshake* records until the Diffie-Hellman handshake is complete and they have established shared key material. Afterwards, they will exchange *Data* records, encrypted using the shared key material. When either side wants to close the connection, they will send an *Alert* record. More illustrations of each record type’s usage will be made in the following section.
 
@@ -224,7 +224,7 @@ The encryption and decryption at this layer occurs in the STN module, in a separ
 
 When the “: push” process is spawned, it starts an event loop in HandshakeLoop(), which processes all outgoing and incoming MMTLS Records. We hooked all functions called by this event loop to understand how each MMTLS Record is processed. The code for this study, as well as the internal function addresses identified for the particular version of WeChat we studied, can be found in the [Github repository](https://github.com/xpko/wechat-security-report/tree/main).
 
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 3](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/image2.png)
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 3](./images/image2.png)
 
 > Figure 1: Network requests: MMTLS encryption connection over longlink and over shortlink. Each box is an MMTLS Record, and each arrow represents an “MMTLS packet” sent over either Longlink (i.e., a single TCP packet) or shortlink (i.e., in the body of HTTP POST). Once both sides have received the DH keyshare, all further records are encrypted.
 
@@ -409,7 +409,7 @@ This request then contains another encrypted ciphertext, which is encrypted by w
 
 [WeChat Crypto diagrams (inner layer)](https://docs.google.com/drawings/d/1Z-L5nUEKlz08G1W4Dt_7DdfF4g4djrgWttK-SkzfLlU/edit)
 
-![WeChat Crypto diagrams (inner layer)](./Should%20We%20Chat,%20Too%20Security%20Analysis%20of%20WeChat%E2%80%99s%20MMTLS%20Encryption%20Protocol/WeChat%20Crypto%20diagrams%20(inner%20layer).png)
+![WeChat Crypto diagrams (inner layer)](./images/image4.png)
 
 This section describes how the Business-layer requests described in **Section 3** are encrypted and decrypted, and how the keys are derived. We note that the set of keys and encryption processes introduced in this section are completely separate from those referred to in the MMTLS Encryption section. Generally, for Business-layer Encryption, much of the protocol logic is handled in the Java code, and the Java code calls out to the C++ libraries for encryption and decryption calculations. Whereas for MMTLS Encryption everything is handled in C++ libraries, and occurs on a different process entirely. There is very little interplay between these two layers of encryption.
 
@@ -425,7 +425,7 @@ For *Symmetric Mode*, the requests are handled in `pack()`, `unpack()`, and `gen
 
 The Business-layer Encryption is also tightly integrated with WeChat’s user authentication system. The user needs to log in to their account before the client is able to send an Autoauth request. For clients that have not logged in, they exclusively use Asymmetric Mode. For clients that have already logged in, their first Business-layer packet would most often be an Autoauth request encrypted using Asymmetric Mode, however, the second and onward Business-layer packets are encrypted using Symmetric Mode.
 
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 4](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/image3.png)
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 4](./images/image3.png)
 
 > **Figure 2: Business-layer encryption, logged-out, logging-in, and logged-in:** Swimlane diagrams showing at a high-level what Business-layer Encryption requests look like, including which secrets are used to generate the key material used for encryption.  🔑 secret is generated via DH(static server public key, client private key), and 🔑 **new_secret** is DH(server public key, client private key). 🔑 **session** is decrypted from the first response when logged-in. Though it isn’t shown above, 🔑 **new_secret** is also used in **genSignature()** when logged-in; this signature is sent with request and response metadata.
 
@@ -542,7 +542,7 @@ The Protobuf structure is defined in each API’s corresponding RR class, as we 
 
 In the below diagram, we demonstrate the network flow for the most common case of opening the WeChat application. We note that in order to prevent further complicating the diagram, HKDF derivations are not shown; for instance, when “🔑 `mmtls`” is used, HKDF is used to derive a key from “🔑 `mmtls`”, and the derived key is used for encryption. The specifics of how keys are derived, and which derived keys are used to encrypt which data, can be found in [these notes](https://github.com/xpko/wechat-security-report/blob/main/docs/outer-crypto.md#full-key-derivation-details).
 
-![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 5](./Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol/image1.png)
+![Should We Chat, Too? Security Analysis of WeChat’s MMTLS Encryption Protocol 5](./images/image1.png)
 
 Figure 3: Swimlane diagram demonstrating the encryption setup and network flow of the most common case (user is logged in, opens WeChat application).
 

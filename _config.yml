@@ -5,7 +5,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-readme-index
+  # - jekyll-readme-index
   - jekyll-github-metadata
   - jekyll-coffeescript
   - jekyll-commonmark-ghpages
