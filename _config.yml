@@ -39,7 +39,7 @@ readme_index:
   enabled:          true
   remove_originals: true
   with_frontmatter: false
-title: shlu's tool
+title: shlu's note
 logo: favicon.ico
 tagline: 常用工具使用和填坑
 description: Android 和 iOS 逆向分析专家，专注于安全研究、工具开发以及常见问题解决方案。提供 Android/iOS 逆向分析教程和资源。
