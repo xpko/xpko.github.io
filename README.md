@@ -12,6 +12,7 @@
   - 📄 [Pixel 2 XL 解除激活锁](./Android/Pixel%202%20XL%20%E8%A7%A3%E9%99%A4%E6%BF%80%E6%B4%BB%E9%94%81.md)
   - 📄 [Pixel 循环重启问题](./Android/Pixel%20%E5%BE%AA%E7%8E%AF%E9%87%8D%E5%90%AF%E9%97%AE%E9%A2%98.md)
   - 📄 [Version](./Android/Version.md)
+  - 📄 [[ROM定制]官改教程super.img解打包](./Android/%5BROM%E5%AE%9A%E5%88%B6%5D%E5%AE%98%E6%94%B9%E6%95%99%E7%A8%8Bsuper.img%E8%A7%A3%E6%89%93%E5%8C%85.md)
   - 📁 adb/
     - 📁 [adbtool/](./Android/adb/adbtool/)
     - 📄 [adb禁用app](./Android/adb/adb%E7%A6%81%E7%94%A8app.md)
@@ -38,7 +39,6 @@
     - 📁 [快译/](./Android/task/%E5%BF%AB%E8%AF%91/)
     - 📁 [望月/](./Android/task/%E6%9C%9B%E6%9C%88/)
   - 📁 [usb上网/](./Android/usb%E4%B8%8A%E7%BD%91/)
-  - 📄 [【ROM定制】官改教程:super.img解打包！](./Android/%E3%80%90ROM%E5%AE%9A%E5%88%B6%E3%80%91%E5%AE%98%E6%94%B9%E6%95%99%E7%A8%8B%3Asuper.img%E8%A7%A3%E6%89%93%E5%8C%85%EF%BC%81.md)
   - 📄 [产品反馈工具](./Android/%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%B7%A5%E5%85%B7.md)
   - 📄 [安装开发常用库](./Android/%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%BA%93.md)
   - 📁 [开发/](./Android/%E5%BC%80%E5%8F%91/)
@@ -329,6 +329,7 @@
 - 📁 [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - 📁 [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
