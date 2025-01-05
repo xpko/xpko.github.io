@@ -26,6 +26,7 @@
     - 📁 [v(c)dex转dex/](./Android/dex/v%28c%29dex%E8%BD%ACdex/)
   - 📁 [gradle/](./Android/gradle/)
   - 📁 [kernel/](./Android/kernel/)
+    - 📄 [【内核定制】超详细华为Honor 9i(LLD-AL20)重新编译内核(解除ptrace禁用)以使用Frida](./Android/kernel/%E3%80%90%E5%86%85%E6%A0%B8%E5%AE%9A%E5%88%B6%E3%80%91%E8%B6%85%E8%AF%A6%E7%BB%86%E5%8D%8E%E4%B8%BAHonor%209i%28LLD-AL20%29%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91%E5%86%85%E6%A0%B8%28%E8%A7%A3%E9%99%A4ptrace%E7%A6%81%E7%94%A8%29%E4%BB%A5%E4%BD%BF%E7%94%A8Frida.md)
   - 📁 [ndk/](./Android/ndk/)
     - 📁 [minimal_project/](./Android/ndk/minimal_project/)
   - 📄 [pixel手机Wifi网络受限问题解决](./Android/pixel%E6%89%8B%E6%9C%BAWifi%E7%BD%91%E7%BB%9C%E5%8F%97%E9%99%90%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3.md)
@@ -37,6 +38,7 @@
     - 📁 [快译/](./Android/task/%E5%BF%AB%E8%AF%91/)
     - 📁 [望月/](./Android/task/%E6%9C%9B%E6%9C%88/)
   - 📁 [usb上网/](./Android/usb%E4%B8%8A%E7%BD%91/)
+  - 📄 [【ROM定制】官改教程:super.img解打包！](./Android/%E3%80%90ROM%E5%AE%9A%E5%88%B6%E3%80%91%E5%AE%98%E6%94%B9%E6%95%99%E7%A8%8B%3Asuper.img%E8%A7%A3%E6%89%93%E5%8C%85%EF%BC%81.md)
   - 📄 [产品反馈工具](./Android/%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%B7%A5%E5%85%B7.md)
   - 📄 [安装开发常用库](./Android/%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%BA%93.md)
   - 📁 [开发/](./Android/%E5%BC%80%E5%8F%91/)
@@ -45,6 +47,7 @@
     - 📁 [rxjava/](./Android/%E5%BC%80%E5%8F%91/rxjava/)
     - 📁 [svg/](./Android/%E5%BC%80%E5%8F%91/svg/)
   - 📁 [悬浮窗/](./Android/%E6%82%AC%E6%B5%AE%E7%AA%97/)
+  - 📄 [某免费视频软件AD机制分析](./Android/%E6%9F%90%E5%85%8D%E8%B4%B9%E8%A7%86%E9%A2%91%E8%BD%AF%E4%BB%B6AD%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90.md)
   - 📁 检测/
     - 📁 [ICBC检测方案/](./Android/%E6%A3%80%E6%B5%8B/ICBC%E6%A3%80%E6%B5%8B%E6%96%B9%E6%A1%88/)
   - 📄 [注册Google voice虚拟号码](./Android/%E6%B3%A8%E5%86%8CGoogle%20voice%E8%99%9A%E6%8B%9F%E5%8F%B7%E7%A0%81.md)
@@ -58,6 +61,8 @@
         - 📄 [草稿](./Android/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/wsl2/ubuntu18.04/%E8%8D%89%E7%A8%BF.md)
     - 📁 wsl方式编译/
       - 📁 [Android-4.4.4_r1/](./Android/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/wsl%E6%96%B9%E5%BC%8F%E7%BC%96%E8%AF%91/Android-4.4.4_r1/)
+    - 📄 [【源码定制】移植Youpk到Android 8.0 (Pixel2 XL)](./Android/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/%E3%80%90%E6%BA%90%E7%A0%81%E5%AE%9A%E5%88%B6%E3%80%91%E7%A7%BB%E6%A4%8DYoupk%E5%88%B0Android%208.0%20%28Pixel2%20XL%29.md)
+    - 📄 [【源码编译】android 10.0.0_r2 for Pixel 2 XL on ubuntu20.04-server](./Android/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/%E3%80%90%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E3%80%91android%2010.0.0_r2%20for%20Pixel%202%20XL%20on%20ubuntu20.04-server.md)
     - 📁 官方编译/
       - 📁 [Android-4.4.4_r1/](./Android/%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/%E5%AE%98%E6%96%B9%E7%BC%96%E8%AF%91/Android-4.4.4_r1/)
   - 📄 [漏洞Index](./Android/%E6%BC%8F%E6%B4%9EIndex.md)
@@ -106,7 +111,11 @@
       - 📄 [sqlcipher编译](./Common/sql/sqlcipher/sqlcipher%E7%BC%96%E8%AF%91.md)
     - 📁 [wcdb/](./Common/sql/wcdb/)
 - 📁 Embedded/
+  - 📄 [ESP32(NodeMCU-32S)简单实现路由中继wifi中继](./Embedded/ESP32%28NodeMCU-32S%29%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E4%B8%AD%E7%BB%A7wifi%E4%B8%AD%E7%BB%A7.md)
+  - 📄 [RFID-RC522STM32F103RBKEIL5 简单实现读取卡片ID](./Embedded/RFID-RC522STM32F103RBKEIL5%20%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E8%AF%BB%E5%8F%96%E5%8D%A1%E7%89%87ID.md)
   - 📁 [esp32/](./Embedded/esp32/)
+  - 📄 [【从零开始】通过Arduino+ESP32(NodeMCU-32S)实现蓝牙设备复制模拟[20210830]](./Embedded/%E3%80%90%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E3%80%91%E9%80%9A%E8%BF%87Arduino%2BESP32%28NodeMCU-32S%29%E5%AE%9E%E7%8E%B0%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E5%A4%8D%E5%88%B6%E6%A8%A1%E6%8B%9F%5B20210830%5D.md)
+  - 📄 [单片机开发之数字温度计制作](./Embedded/%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91%E4%B9%8B%E6%95%B0%E5%AD%97%E6%B8%A9%E5%BA%A6%E8%AE%A1%E5%88%B6%E4%BD%9C.md)
 - 📁 [Graphviz/](./Graphviz/)
 - 📁 [IDA/](./IDA/)
   - 📄 [IDA小知识点集合](./IDA/IDA%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9%E9%9B%86%E5%90%88.md)
@@ -156,6 +165,8 @@
     - 📄 [pfp](./ast/010editor/pfp.md)
 - 📁 [baidupan/](./baidupan/)
   - 📁 [images/](./baidupan/images/)
+- 📁 beini/
+  - 📄 [Beini奶瓶U盘PE完整教程[2018-11-28]](./beini/Beini%E5%A5%B6%E7%93%B6U%E7%9B%98PE%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B%5B2018-11-28%5D.md)
 - 📁 [bnf/](./bnf/)
 - 📁 cloud/
   - 📁 [gcloud/](./cloud/gcloud/)
@@ -301,6 +312,7 @@
 - 📁 [wechat/](./wechat/)
   - 📄 [Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol](./wechat/Should%20We%20Chat%2C%20Too%20Security%20Analysis%20of%20WeChat%E2%80%99s%20MMTLS%20Encryption%20Protocol.md)
 - 📁 [window/](./window/)
+  - 📄 [Window下frp最稳定的开机自启方式【将程序转为服务(天生自带隐藏窗口功能)】【放弃不靠谱的定时任务和启动目录启动吧】（向日葵稳定开机自启实现原理分析）](./window/Window%E4%B8%8Bfrp%E6%9C%80%E7%A8%B3%E5%AE%9A%E7%9A%84%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E6%96%B9%E5%BC%8F%E3%80%90%E5%B0%86%E7%A8%8B%E5%BA%8F%E8%BD%AC%E4%B8%BA%E6%9C%8D%E5%8A%A1%28%E5%A4%A9%E7%94%9F%E8%87%AA%E5%B8%A6%E9%9A%90%E8%97%8F%E7%AA%97%E5%8F%A3%E5%8A%9F%E8%83%BD%29%E3%80%91%E3%80%90%E6%94%BE%E5%BC%83%E4%B8%8D%E9%9D%A0%E8%B0%B1%E7%9A%84%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%90%AF%E5%8A%A8%E7%9B%AE%E5%BD%95%E5%90%AF%E5%8A%A8%E5%90%A7%E3%80%91%EF%BC%88%E5%90%91%E6%97%A5%E8%91%B5%E7%A8%B3%E5%AE%9A%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90%EF%BC%89.md)
   - 📄 [bat](./window/bat.md)
   - 📄 [cmd](./window/cmd.md)
   - 📁 [images/](./window/images/)
@@ -317,6 +329,7 @@
 - 📁 [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - 📁 [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
