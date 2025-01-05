@@ -1,13 +1,5 @@
 # 【源码编译】android 10.0.0_r2 for Pixel 2 XL on ubuntu20.04-server
 
-[【源码编译】android-13.0.0_r7 for Pixel 4 on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127729612)  
-[【源码编译】android-12.1.0_r11 for Pixel 4 on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127748826)  
-[【源码编译】android-11.0.0_r46 for Pixel 4 on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127748916)  
-[【源码编译】android 10.0.0_r2 for Pixel 2 XL on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127512748)  
-[【源码编译】android-9.0.0_r46 for Pixel 2 XL on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127748976)  
-[【源码编译】android-8.0.0_r21 for Pixel 2 XL on ubuntu20.04-server](https://blog.csdn.net/qq_26914291/article/details/127630786)  
-
-@[TOC](内容索引)
 # 前言
 感谢看雪，简书，CSDN等各个平台上的前辈的编译教程，感谢Google让android编译越来越简单，以前编译基本各种问题，现在直接一步到底，超级流畅
 # 配置环境
