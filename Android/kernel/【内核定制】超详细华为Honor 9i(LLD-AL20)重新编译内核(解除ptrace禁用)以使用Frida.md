@@ -1,7 +1,5 @@
 # 【内核定制】超详细华为Honor 9i(LLD-AL20)重新编译内核(解除ptrace禁用)以使用Frida
 
-------
-
 # 所需资料
 
 1.[LLD-AL20-AL30-L22_OREO_EMUI8.0_Opensource.tar.gz](https://download-c1.huawei.com/download/downloadCenter?downloadId=99912&version=425342&siteCode=worldwide)
