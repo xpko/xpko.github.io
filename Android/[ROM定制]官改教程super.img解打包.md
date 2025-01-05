@@ -87,7 +87,7 @@ Tiny Fastboot Sript:可以不用自己写脚本。
 必须操作上一步，吧应用强行停止
 
 5,打开mt管理器解压Rom包，实际在tik解压也行，楼主习惯使用mt。
- 
+
  6,在tik创建任务。注意不要使用中文！
 
 ![img](./assets/96cc17cae94cc1629f6f77e838d8deca.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
@@ -95,9 +95,9 @@ Tiny Fastboot Sript:可以不用自己写脚本。
 我这里创建的是“0”
 
 然后把dna安卓里合并的super移动到tik项目里
- 
+
  tik的项目目录是/data/data/com.termux/files/home/ubuntu/root/TIK/你创建的项目名称
- 
+
  之后输入2选择解包菜单
 
 ![img](./assets/8a6ccb4daec081b33b6882964380539c.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
@@ -111,7 +111,7 @@ Tiny Fastboot Sript:可以不用自己写脚本。
 ![img](./assets/589a7100336a8452eb735caf3c5358f5.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
 
 然后把b分区文件全删了，因为是白的！
- 
+
  只保留a区四个
 
 ![img](./assets/7cb20bb2b0c0f313d925aa79b5ba61dc.jpeg)
@@ -124,7 +124,7 @@ Tiny Fastboot Sript:可以不用自己写脚本。
 ![img](./assets/a77aaa3b57d486502b9b6922fc422cc6.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
 
 之后到termux
- 
+
  还是解压所有文件
 
 ![img](./assets/d19bf676e3e5f193871f67040752980a.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
@@ -146,7 +146,7 @@ Tiny Fastboot Sript:可以不用自己写脚本。
  然后把打包出来的img镜像移动到新目录
  到目录里手动创建一个文件夹命名为super
  之后把镜像移动到super文件夹
- 
+
  然后开始打包！
  选择66打包super
 
@@ -173,7 +173,7 @@ Tiny Fastboot Sript:可以不用自己写脚本。
 ![img](./assets/ce7f4b4e723f0a1e13885eda57b111c7.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
 
 
- 
+
  最后用tfs刷入我就不做过多解释啦
 
 ![img](./assets/c8e0e1f1c84bce8a5313bf363098ee75.jpeg)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
