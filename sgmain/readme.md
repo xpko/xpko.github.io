@@ -1,4 +1,49 @@
-# 模拟加载libsgmain.so
+## 架构分析
+
+|   组件   |        类         |        说明        |
+| :------: | :---------------: | :----------------: |
+|  初始化  |   SecurityInit    |   负责全局初始化   |
+|   异常   |   JAQException    |    接口调用异常    |
+| 安全接口 | SecuritySignature | 安全签名、白盒签名 |
+| 安全接口 |  SecurityCipher   | 安全加密、白盒加密 |
+| 安全接口 |  SecurityStorage  |      安全存储      |
+
+## 静态数据加密组件
+
+```java
+package com.alibaba.wireless.security.open.staticdataencrypt;
+
+import com.alibaba.wireless.security.framework.InterfacePluginInfo;
+import com.alibaba.wireless.security.open.IComponent;
+import com.alibaba.wireless.security.open.SecException;
+
+@InterfacePluginInfo(pluginName = "main")
+/* loaded from: I:\So库_6.3\classes.dex */
+public interface IStaticDataEncryptComponent extends IComponent {
+    public static final int ALGORITHM_MAX_NUMBER = 19;
+    public static final int OPEN_ENUM_CIPHER_AES128 = 16;
+    public static final int OPEN_ENUM_CIPHER_AES192 = 17;
+    public static final int OPEN_ENUM_CIPHER_AES256 = 18;
+    public static final int OPEN_ENUM_CIPHER_ARCFOUR = 3;
+
+    byte[] staticBinarySafeDecrypt(int i, String str, byte[] bArr, String str2) throws SecException;
+
+    byte[] staticBinarySafeDecryptNoB64(int i, String str, byte[] bArr, String str2) throws SecException;
+
+    byte[] staticBinarySafeEncrypt(int i, String str, byte[] bArr, String str2) throws SecException;
+
+    byte[] staticBinarySafeEncryptNoB64(int i, String str, byte[] bArr, String str2) throws SecException;
+
+    String staticSafeDecrypt(int i, String str, String str2, String str3) throws SecException;
+
+    String staticSafeEncrypt(int i, String str, String str2, String str3) throws SecException;
+}
+```
+
+
+
+## 模拟加载libsgmain.so
+
 ```java
 public void sgmain(){
         String libDir=getApplicationInfo().nativeLibraryDir;
