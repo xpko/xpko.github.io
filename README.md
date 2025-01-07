@@ -38,6 +38,8 @@
   - 📁 task/
     - 📁 [快译/](./Android/task/%E5%BF%AB%E8%AF%91/)
     - 📁 [望月/](./Android/task/%E6%9C%9B%E6%9C%88/)
+  - 📁 trace/
+    - 📄 [使用时间无关调试技术(Timeless Debugging)高效分析混淆代码](./Android/trace/%E4%BD%BF%E7%94%A8%E6%97%B6%E9%97%B4%E6%97%A0%E5%85%B3%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF%28Timeless%20Debugging%29%E9%AB%98%E6%95%88%E5%88%86%E6%9E%90%E6%B7%B7%E6%B7%86%E4%BB%A3%E7%A0%81.md)
   - 📁 [usb上网/](./Android/usb%E4%B8%8A%E7%BD%91/)
   - 📄 [产品反馈工具](./Android/%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%B7%A5%E5%85%B7.md)
   - 📄 [安装开发常用库](./Android/%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%BA%93.md)
@@ -310,6 +312,7 @@
 - 📁 [usb/](./usb/)
 - 📁 [virtualbox/](./virtualbox/)
 - 📁 [vixl/](./vixl/)
+  - 📄 [时间无关调试](./vixl/%E6%97%B6%E9%97%B4%E6%97%A0%E5%85%B3%E8%B0%83%E8%AF%95.md)
 - 📁 [vscode/](./vscode/)
 - 📁 [wechat/](./wechat/)
   - 📄 [Should We Chat, Too Security Analysis of WeChat’s MMTLS Encryption Protocol](./wechat/Should%20We%20Chat%2C%20Too%20Security%20Analysis%20of%20WeChat%E2%80%99s%20MMTLS%20Encryption%20Protocol.md)
@@ -331,6 +334,7 @@
 - 📁 [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - 📁 [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
