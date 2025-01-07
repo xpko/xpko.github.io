@@ -52,9 +52,11 @@ watchpoint set expression -w write -- 0xe8583c00+32
 - apropos:查找和特定的词或主题相关的调试器命令列表
 - image list -o -f :查找所有模块基址
 ## pycharm 导入lldb模块
-ref:[pycharm下设置PYTHONPATH](https://blog.csdn.net/weixin_41698305/article/details/90902427)  
+![image-20250107111648185](./assets/image-20250107111648185.png)
+
 lldb模块路径：`sdk\ndk\23.0.7599858\toolchains\llvm\prebuilt\windows-x86_64\lib\python3.9\site-packages` 
-- 直接在Window下python里import lldb会报找不到_lldb模块
+
+- ~~直接在Window下python里import lldb会报找不到_lldb模块~~
 - 可以在msys2命令行里启动pycharm.exe，然后在pycharm里正常编写代码即可(前提需要在msys2里用pacman先安装lldb)(若是pacman报密钥错误，不要搜解决方案，解决不了的，直接删除原来msys2，再[下载最新版msys2重新安装](https://www.msys2.org/)即可)(安装完成后再用[pacman更新](https://kaosx.us/docs/pacman/)下)
 - 当然也可以再macOS里pycharm使用lldb，没什么坑
 ## python api for lldb
