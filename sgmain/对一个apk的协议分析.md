@@ -494,7 +494,15 @@ hash_ = hash;
 
 **补充 By shlu**
 
-经在android 14上测试，发现sign固定返回607 ？？android版本问题？有联网操作？？
+ ~~经在android 14上测试，发现sign固定返回607 ？？android版本问题？有联网操作？？~~
+
+> sgmain会检测apk签名，不匹配会报607
+
+
+
+
+
+
 
 
 

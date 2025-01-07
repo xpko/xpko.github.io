@@ -1,4 +1,7 @@
+# LLDB for android
+
 # 环境配置
+
 - 下载sdk
 - 下载ndk
 - lldb-server路径:sdk/lldb/3.1/android/{arch}/lldb-server
@@ -17,7 +20,7 @@ adb shell su -c './data/local/tmp/lldb-server platform --listen unix-abstract://
 ```
 # 配置lldb
 ```
-adb forward tcp:124 tcp:1234
+adb forward tcp:1234 tcp:1234
 lldb.cmd
 platform list
 platform select remote-android
