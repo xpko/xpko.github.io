@@ -35,4 +35,4 @@ win/linux安装包与RC1一样
 ## 参考
 
 - https://bbs.kanxue.com/thread-283917.htm
-- 
+- https://auth.lol/ 原始大佬

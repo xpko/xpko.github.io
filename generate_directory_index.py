@@ -89,7 +89,7 @@ def generate_markdown_index(
                 indent = '  ' * level
                 # 确保目录路径以 '/' 结尾，并进行 URL 编码
                 dir_link = urllib.parse.quote(relative_path.rstrip('/') + '/')
-                markdown += f"{indent}- 📁 [{item}/]({dir_link})\n"
+                markdown += f"{indent}- ![dir](./assets/icon-directory.svg) [{item}/]({dir_link})\n"
                 # 递归查找子目录
                 markdown += generate_markdown_index(
                     base_path,
@@ -109,7 +109,7 @@ def generate_markdown_index(
                     exclude_files=combined_exclude_files
                 )
                 if sub.strip():
-                    markdown += f"{indent}- 📁 {item}/\n"
+                    markdown += f"{indent}- ![dir](./assets/icon-directory.svg) {item}/\n"
                     markdown += sub
 
         # 如果是文件，并且是 Markdown 文件，且未被排除
@@ -122,7 +122,7 @@ def generate_markdown_index(
                 indent = '  ' * level
                 file_name = os.path.splitext(item)[0]
                 file_link = urllib.parse.quote(relative_path)
-                markdown += f"{indent}- 📄 [{file_name}]({file_link})\n"
+                markdown += f"{indent}- ![dir](./assets/icon-file.svg) [{file_name}]({file_link})\n"
 
     return markdown
 
@@ -130,7 +130,7 @@ def main():
     base_path = '.'  # 仓库根目录
 
     # 全局排除的目录和文件（可自行按需设置）
-    exclude_dirs = ['.git', '.github', 'node_modules', '__pycache__']
+    exclude_dirs = ['.git', '.github', 'node_modules', '__pycache__', '_site','_layouts','_plugins', '.jekyll-cache', '.idea']
     exclude_files = []  # 如需全局排除特定文件，可在此添加
 
     start_marker = '<!-- DIRECTORY INDEX START -->'

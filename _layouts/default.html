@@ -34,6 +34,10 @@
 
       {{ content }}
 
+      <blockquote>
+      <p>声明：转载请注明出处，原文地址：<a href="{{ site.url }}{{ page.url }}">{{ site.title }}</a></p>
+      </blockquote>
+
       <!-- comments config BEGIN -->
 
       <!-- src="https://giscus.app/client.js" 自定义client.js-->
@@ -68,11 +72,9 @@ console.error("".concat(h(a)," No session is stored initially. ").concat("Please
 
 <!-- comments config END -->
 
-      {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        This site is open source. {% github_edit_link "Improve this page" %}.
+        ©2025 {{ site.title }} 
       </div>
-      {% endif %}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
