@@ -70,10 +70,13 @@ e.classList.remove("giscus-frame--loading")});b=document.getElementById("giscus-
 console.error("".concat(h(a)," No session is stored initially. ").concat("Please consider reporting this error at https://github.com/giscus/giscus/issues/new.")):a.includes("Discussion not found")?console.warn("[giscus] ".concat(a,". A new discussion will be created if a comment/reaction is submitted.")):a.includes("API rate limit exceeded")?console.warn(h(a)):console.error("".concat(h(a)," ").concat("Please consider reporting this error at https://github.com/giscus/giscus/issues/new.")))))})})();
 </script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
 <!-- comments config END -->
 
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        ©2025 {{ site.title }} 
+        ©2025 {{ site.title }} | <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>  
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
