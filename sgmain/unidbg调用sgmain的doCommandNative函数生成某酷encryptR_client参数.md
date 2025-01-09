@@ -500,3 +500,8 @@ long createAVMPInstance = (Long) dvmObject.getValue();
 
 ![在这里插入图片描述](./assets/b496142a482f4e4989d43626f527445c.jpeg)
 这次终于调用成功了，并且结果与hook的是一致的，说明调用没有错误。完美，散花！！！
+
+------
+
+**补充 By shlu：**
+
