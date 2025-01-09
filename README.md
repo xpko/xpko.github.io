@@ -203,6 +203,7 @@
 - ![dir](./assets/icon-directory.svg) [github/](./github/)
   - ![dir](./assets/icon-file.svg) [Google网页索引](./github/Google%E7%BD%91%E9%A1%B5%E7%B4%A2%E5%BC%95.md)
   - ![dir](./assets/icon-file.svg) [jekyll Front Matter 变量有哪些？](./github/jekyll%20Front%20Matter%20%E5%8F%98%E9%87%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F.md)
+  - ![dir](./assets/icon-file.svg) [为Jekyll添加访问量显示](./github/%E4%B8%BAJekyll%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F%E6%98%BE%E7%A4%BA.md)
   - ![dir](./assets/icon-file.svg) [为Jekyll添加评论系统](./github/%E4%B8%BAJekyll%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F.md)
   - ![dir](./assets/icon-file.svg) [将github仓库无侵入转换为github-pages](./github/%E5%B0%86github%E4%BB%93%E5%BA%93%E6%97%A0%E4%BE%B5%E5%85%A5%E8%BD%AC%E6%8D%A2%E4%B8%BAgithub-pages.md)
 - ![dir](./assets/icon-directory.svg) [huawei/](./huawei/)
@@ -334,6 +335,7 @@
 - ![dir](./assets/icon-directory.svg) [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - ![dir](./assets/icon-directory.svg) [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
