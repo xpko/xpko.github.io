@@ -42,6 +42,7 @@
     - ![dir](./assets/icon-file.svg) [使用时间无关调试技术(Timeless Debugging)高效分析混淆代码](./Android/trace/%E4%BD%BF%E7%94%A8%E6%97%B6%E9%97%B4%E6%97%A0%E5%85%B3%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF%28Timeless%20Debugging%29%E9%AB%98%E6%95%88%E5%88%86%E6%9E%90%E6%B7%B7%E6%B7%86%E4%BB%A3%E7%A0%81.md)
   - ![dir](./assets/icon-directory.svg) [usb上网/](./Android/usb%E4%B8%8A%E7%BD%91/)
   - ![dir](./assets/icon-file.svg) [产品反馈工具](./Android/%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%B7%A5%E5%85%B7.md)
+  - ![dir](./assets/icon-file.svg) [如何充分发挥360加固onCreate的VMP保护特性](./Android/%E5%A6%82%E4%BD%95%E5%85%85%E5%88%86%E5%8F%91%E6%8C%A5360%E5%8A%A0%E5%9B%BAonCreate%E7%9A%84VMP%E4%BF%9D%E6%8A%A4%E7%89%B9%E6%80%A7.md)
   - ![dir](./assets/icon-file.svg) [安装开发常用库](./Android/%E5%AE%89%E8%A3%85%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%BA%93.md)
   - ![dir](./assets/icon-directory.svg) [开发/](./Android/%E5%BC%80%E5%8F%91/)
     - ![dir](./assets/icon-directory.svg) Code/
@@ -300,6 +301,7 @@
   - ![dir](./assets/icon-file.svg) [window](./software-top100/window.md)
 - ![dir](./assets/icon-directory.svg) [ssh/](./ssh/)
 - ![dir](./assets/icon-directory.svg) [switch/](./switch/)
+- ![dir](./assets/icon-directory.svg) [synergy/](./synergy/)
 - ![dir](./assets/icon-directory.svg) [termux/](./termux/)
 - ![dir](./assets/icon-directory.svg) [ubuntu/](./ubuntu/)
   - ![dir](./assets/icon-directory.svg) [ppa/](./ubuntu/ppa/)
@@ -336,6 +338,7 @@
 - ![dir](./assets/icon-directory.svg) [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - ![dir](./assets/icon-directory.svg) [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
