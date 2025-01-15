@@ -121,3 +121,83 @@ public class Main extends Activity {
 ```
 
 这样就实现了核心代码的vmp保护
+
+## 封装实现
+
+不过这样使用起来肯定是不太方便的，比如函数参数和返回值的处理，为此笔者优化了下代码，封装了一个库： [VMP361](https://github.com/xpko/VMP361) 
+
+使用时，直接继承其中的VMP361.Method类，把要保护的核心代码放入onCreate方法，然后在 AndroidManifest.xml 里注册即可
+
+```java
+public class Request extends VMP361.Method {
+
+    @Override
+    protected void onCreate(Bundle args) {//这里建议设为 protected， 防止被外部调用
+        super.onCreate(args);//调用父类的onCreate解析参数
+        String urlString = "https://note.shlu.fyi?arg0="+getArg(0);//获取参数
+        StringBuilder result = new StringBuilder();
+        HttpsURLConnection urlConnection = null;
+
+        try {
+            URL url = new URL(urlString);
+            urlConnection = (HttpsURLConnection) url.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.setConnectTimeout(10000); // 10秒
+            urlConnection.setReadTimeout(10000); // 10秒
+
+            int responseCode = urlConnection.getResponseCode();
+            if (responseCode == HttpsURLConnection.HTTP_OK) {
+                InputStream in = urlConnection.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+                String line;
+
+                while ((line = reader.readLine()) != null) {
+                    result.append(line);
+                }
+
+                reader.close();
+                in.close();
+            } else {
+                result.append("响应码：").append(responseCode);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.append("异常：").append(e.getMessage());
+        } finally {
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+        }
+        result(result);//返回结果
+    }
+
+}
+```
+
+其中getArg(0)，可以获取对应索引的参数，返回值为泛型，可以自动转换类型，result(result)将处理后的结果返回
+
+接下来就可以调用了
+
+```java
+public class Main extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button request= findViewById(R.id.request);
+        Button hook= findViewById(R.id.hook);
+        Button code= findViewById(R.id.code);
+        request.setOnClickListener(v->{
+            new Thread(()-> System.out.println("qqqq:"+VMP361.createMethod(Request.class).call("aaa"))).start();
+        });
+    }
+}
+```
+
+一行代码搞定：
+
+```java
+VMP361.createMethod(Request.class).call("aaa")
+```
+
