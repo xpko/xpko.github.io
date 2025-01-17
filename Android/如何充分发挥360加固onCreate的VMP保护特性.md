@@ -1,5 +1,11 @@
 # 如何充分发(白)挥(嫖)360加固onCreate的VMP保护特性
 
+献丑了，下面不用看了，原来免费版支持通过注解 [@QVMProtect](https://bbs.kanxue.com/target-N47xcMwLQkEpIb29pdLKI9BY6iO2xqUlwvsvdNzpEbPcIPLDakSx82zg7_2BWpvKf2.htm) 来定制化VMP保护的函数，我一直以为这个功能是付费的....emmmm
+
+--------
+
+
+
 众所周知，360加固仅对Activity的onCreate函数进行了vmp加强保护，但一般我们的核心代码都不在该函数里，这样就起不到应有的保护作用了，那怎样才能把核心代码放到onCreate里呢？
 
 ## 开始探究
@@ -242,5 +248,9 @@ public class EncryptUtil_encrypt extends VMP361.Method {
 ```
 
 当然，这只是一种最简单的函数，实际函数可能要复杂的多，比如涉及外部变量和函数调用等等
+
+## 基于成品APK做批量化操作(TODO)
+
+还有一种方式不是基于AS插件，而是直接对apk进行操作，通过dexlib等类似的工具直接解析重构dex和AndroidManifest.xml文件，看看后面有空时间再搞吧，或者有做过这方面研究的大佬也可以试试
 
 不过不确定360加固保护onCreate的个数有没有限制，有知道的大佬可以评论区说下
