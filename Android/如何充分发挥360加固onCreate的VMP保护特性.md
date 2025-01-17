@@ -1,4 +1,4 @@
-# 如何充分发挥360加固onCreate的VMP保护特性
+# 如何充分发(白)挥(嫖)360加固onCreate的VMP保护特性
 
 众所周知，360加固仅对Activity的onCreate函数进行了vmp加强保护，但一般我们的核心代码都不在该函数里，这样就起不到应有的保护作用了，那怎样才能把核心代码放到onCreate里呢？
 
@@ -201,3 +201,46 @@ public class Main extends Activity {
 VMP361.createMethod(Request.class).call("aaa")
 ```
 
+## 批量化操作(TODO)
+
+将要想保护的函数或类加上注解，比如
+
+```java
+import x.vmp.VMP361
+public class EncryptUtil {
+    
+    @VMP361.Protect
+    public String encrypt(String data){
+        return base64(aes(data));
+    }
+}
+```
+
+然后通过AS插件，自动化提取被注解的函数的代码，放到一个以<类名>+<函数名>命名的Activity里的onCreate方法里，并将该Activity注册到AndroidManifest.xml里，最后再通过上面说的一行代码调用即可
+
+```java
+import x.vmp.VMP361
+public class EncryptUtil {
+    
+    @VMP361.Protect
+    public String encrypt(String data){
+       return VMP361.createMethod(EncryptUtil_encrypt.class).call(data)
+    }
+}
+```
+
+```java
+import x.vmp.VMP361
+public class EncryptUtil_encrypt extends VMP361.Method {
+    
+    @VMP361.Protect
+    public void onCreate(Bundle args){
+        super.onCreate(args);
+        result(base64(aes(getArg(0))));
+    }
+}
+```
+
+当然，这只是一种最简单的函数，实际函数可能要复杂的多，比如涉及外部变量和函数调用等等
+
+不过不确定360加固保护onCreate的个数有没有限制，有知道的大佬可以评论区说下
