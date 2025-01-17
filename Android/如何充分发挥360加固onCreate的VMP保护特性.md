@@ -233,7 +233,7 @@ public class EncryptUtil {
 import x.vmp.VMP361
 public class EncryptUtil_encrypt extends VMP361.Method {
     
-    @VMP361.Protect
+    @Override
     public void onCreate(Bundle args){
         super.onCreate(args);
         result(base64(aes(getArg(0))));
