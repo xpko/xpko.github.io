@@ -214,6 +214,7 @@
   - ![dir](./assets/icon-directory.svg) [Surge/](./iOS/Surge/)
   - ![dir](./assets/icon-directory.svg) [keychain/](./iOS/keychain/)
   - ![dir](./assets/icon-directory.svg) [lldb/](./iOS/lldb/)
+    - ![dir](./assets/icon-file.svg) [利用Frida实现在LLDB Spawn方式调试iOS进程时可以获取进程模块列表](./iOS/lldb/%E5%88%A9%E7%94%A8Frida%E5%AE%9E%E7%8E%B0%E5%9C%A8LLDB%20Spawn%E6%96%B9%E5%BC%8F%E8%B0%83%E8%AF%95iOS%E8%BF%9B%E7%A8%8B%E6%97%B6%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9D%97%E5%88%97%E8%A1%A8.md)
   - ![dir](./assets/icon-file.svg) [old](./iOS/old.md)
   - ![dir](./assets/icon-file.svg) [常用api](./iOS/%E5%B8%B8%E7%94%A8api.md)
   - ![dir](./assets/icon-directory.svg) 越狱/
@@ -338,6 +339,7 @@
 - ![dir](./assets/icon-directory.svg) [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - ![dir](./assets/icon-directory.svg) [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
