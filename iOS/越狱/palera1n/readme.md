@@ -31,7 +31,7 @@
 
 * Type-C转Lightning和PD快充线支持吗？
 
-  不支持
+  不支持? 我实际测试支持的啊，难道是第一次不行，后续第二次以后可以
 # 参考
 - [Installing palera1n](https://ios.cfw.guide/installing-palera1n/#running-palera1n-1)
 - [Palera1n越狱简体中文，iOS15.0~16.7越狱支持Mac/Linux/U盘多平台](https://dkxuanye.cn/?p=6813)
