@@ -336,9 +336,12 @@
 - ![dir](./assets/icon-directory.svg) [wireshark/](./wireshark/)
 - ![dir](./assets/icon-directory.svg) [wsl/](./wsl/)
 - ![dir](./assets/icon-directory.svg) [xshell5/](./xshell5/)
+- ![dir](./assets/icon-directory.svg) zlibrary/
+  - ![dir](./assets/icon-file.svg) [ZLibrary](./zlibrary/ZLibrary.md)
 - ![dir](./assets/icon-directory.svg) [程序切片/](./%E7%A8%8B%E5%BA%8F%E5%88%87%E7%89%87/)
 - ![dir](./assets/icon-directory.svg) [符号执行/](./%E7%AC%A6%E5%8F%B7%E6%89%A7%E8%A1%8C/)
 <!-- DIRECTORY INDEX END -->
+
 
 
 
