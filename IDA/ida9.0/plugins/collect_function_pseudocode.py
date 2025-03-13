@@ -28,7 +28,7 @@ class ActionManager(object):
 action_manager = ActionManager()
 
 
-visited = set()
+# visited = set()
 
 def collect_function_pseudocode(func_ea, visited):
     if func_ea in visited:
@@ -52,8 +52,10 @@ def collect_function_pseudocode(func_ea, visited):
     flowchart = idaapi.FlowChart(func_obj)
     for block in flowchart:
         for head in idautils.Heads(block.start_ea, block.end_ea):
+            # print(f"head: 0x{hex(head)}")
             # 使用 IDA 提供的API判断是否是函数调用指令（多架构通用）
-            if idaapi.is_call_insn(head):
+            if idaapi.is_call_insn(head) or idaapi.ua_mnem(head) == "B":
+                # print(f"is call")
                 call_target = idc.get_operand_value(head, 0)
                 # 如果IDA能够识别call目标并确定它在函数列表里
                 if call_target and idaapi.get_func(call_target):
@@ -101,11 +103,11 @@ class CFPMenuAction(Action):
         return idaapi.AST_DISABLE_FOR_WIDGET
 
 
-class GenerateFridaHookScript(CFPMenuAction):
+class GenerateFuncCode(CFPMenuAction):
     description = "Generate Func Code on current func"
 
     def __init__(self):
-        super(GenerateFridaHookScript, self).__init__()
+        super(GenerateFuncCode, self).__init__()
 
     def activate(self, ctx):
         main()
@@ -117,7 +119,7 @@ def main():
     if not func:
         print("No function found at 0x{:X}".format(start_ea))
         return
-    full_code = collect_function_pseudocode(func.start_ea, visited)
+    full_code = collect_function_pseudocode(func.start_ea, visited=set())
     print(full_code)
     try:
         QApplication.clipboard().setText(full_code)
@@ -128,6 +130,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-action_manager.register(GenerateFridaHookScript())
+action_manager.register(GenerateFuncCode())
 
 
