@@ -17,3 +17,5 @@ Official Wikipedia: https://en.wikipedia.org/wiki/Z-Library
 Magic Email: [blackbox@zbox.ph](mailto:blackbox@zbox.ph)
 
 My ZLibrary bot on telegram: https://t.me/shluer_bot
+
+Online Reader: https://litera-reader.com/
